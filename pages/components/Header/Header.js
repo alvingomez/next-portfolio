@@ -2,15 +2,15 @@ import Link from "next/link";
 import React from "react";
 import { div } from "prelude-ls";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
 import classes from "./Header.module.scss";
+import { DiCssdeck } from 'react-icons/di';
 
 const Header = () => (
   <div className={classes.container}>
     <div className={classes.grid1}>
       <Link href="/">
-        <a className={classes.navigation}>
-          <DiCssdeck size="3rem" /> <span>Alvin</span>
+        <a style={{display:'flex', alignItems:'center', color:'white'}}>
+          <DiCssdeck size="4rem" /> <span>Alvin</span>
         </a>
       </Link>
     </div>
@@ -44,16 +44,16 @@ const Header = () => (
         </li>
     </div>
     {/* End of grid2 */}
+    {/* Social icons */}
     <div className={classes.grid3}>
         <a href="https://github.com/alvingomez" className={classes.social_icons} >
         <AiFillGithub size="3rem" color="blue"/>
-        </a>
-    </div>
-    <div className={classes.grid3}>
+        </a>    
         <a href="https://github.com/alvingomez" className={classes.social_icons} >
         <AiFillLinkedin size="3rem" color='blue'/>
         </a>
     </div>
+    {/* end of grid3 */}
   </div>
   //End of container
 );

@@ -47,10 +47,10 @@ const Header = () => (
     {/* Social icons */}
     <div className={classes.grid3}>
         <a href="https://github.com/alvingomez" className={classes.social_icons} >
-        <AiFillGithub size="3rem" color="blue"/>
+        <AiFillGithub size="3rem" />
         </a>    
         <a href="https://github.com/alvingomez" className={classes.social_icons} >
-        <AiFillLinkedin size="3rem" color='blue'/>
+        <AiFillLinkedin size="3rem" />
         </a>
     </div>
     {/* end of grid3 */}
